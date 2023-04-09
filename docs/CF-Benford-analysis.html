@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Algo extraño sucede en el departamento de contabilidad… 👻</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Algo extraño sucede en el departamento de contabilidad… 👻</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><strong>Resumen:</strong><br> En el presente cuaderno se aplica el análisis de Benford a documentos contables previamente procesados. Esto con el fin de investigar la veracidad de una supuesta manipulación de datos en transacciones financieras con proveedores.</p>
+<p><strong>Objetivos:</strong></p>
+<ul>
+<li>Analizar tablas SAP.</li>
+<li>Procesar documentos contables.</li>
+<li>Aplicar análisis de Benford.</li>
+<li>Visualizar resultados.</li>
+<li>Encontrar un culpable.</li>
+</ul>
+<hr>
+<section id="importar-librerías-utilidades-y-cargar-datos" class="level2">
+<h2 class="anchored" data-anchor-id="importar-librerías-utilidades-y-cargar-datos">Importar librerías, utilidades y cargar datos</h2>
+<div class="cell" data-tags="[]" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importar</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Para este cuaderno, hay dos tablas descargadas del sistema SAP:</p>
+<ol type="1">
+<li><strong>BSEG.csv</strong>: Almacena los detalles de las transacciones contables.</li>
+<li><strong>BKPF.csv</strong>: Almacena los registros principales de los documentos contables.</li>
+</ol>
+<div class="cell" data-tags="[]" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargar datos</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>bseg <span class="op">=</span> pd.read_csv(<span class="st">'./datos/BSEG.csv'</span>, low_memory<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>bkpf <span class="op">=</span> pd.read_csv(<span class="st">'./datos/BKPF.csv'</span>, low_memory<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Ambas tablas contienen varias columnas.</p>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:319,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249527521,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="0b9868e3-63bd-4f99-9073-236609c7fb58" data-tags="[]" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>bseg.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>Index(['Unnamed: 0', 'MANDT', 'BUKRS', 'BELNR', 'GJAHR', 'BUZEI', 'BUZID',
+       'AUGDT', 'AUGCP', 'AUGBL',
+       ...
+       'PEROP_END', 'FASTPAY', 'IGNR_IVREF', 'FMFGUS_KEY', 'FMXDOCNR',
+       'FMXYEAR', 'FMXDOCLN', 'FMXZEKKN', 'PRODPER', 'RECRF'],
+      dtype='object', length=337)</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:273,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249590681,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="8021650c-5ea8-4d9f-e33d-32d41b347922" data-tags="[]" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>bkpf.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>Index(['Unnamed: 0', 'MANDT', 'BUKRS', 'BELNR', 'GJAHR', 'BLART', 'BLDAT',
+       'BUDAT', 'MONAT', 'CPUDT',
+       ...
+       'SSBLK', 'BATCH', 'SNAME', 'SAMPLED', 'EXCLUDE_FLAG', 'BLIND',
+       'OFFSET_STATUS', 'OFFSET_REFER_DAT', 'PENRC', 'KNUMV'],
+      dtype='object', length=114)</code></pre>
+</div>
+</div>
+</section>
+<section id="bkpf" class="level2">
+<h2 class="anchored" data-anchor-id="bkpf">BKPF</h2>
+<p>Sin embargo, de <code>BKPF</code>, solo son necesarias las siguientes columnas:</p>
+<ul>
+<li><code>BELNR</code> - El número del documento contable.</li>
+<li><code>BLART</code> - El tipo de documento.</li>
+<li><code>USNAM</code> - El usuario contador que registró el documento.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reducir el DataFrame a las columnas de interés</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>bkpf <span class="op">=</span> bkpf.loc[:, [<span class="st">'BELNR'</span>, <span class="st">'BLART'</span>, <span class="st">'USNAM'</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:351,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249594124,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="1c82125f-f431-471e-b908-7f477e1d80d7" data-tags="[]" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtener una muestra replicable y aleatoria de 10 filas</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>bkpf.sample(<span class="dv">10</span>, random_state<span class="op">=</span><span class="dv">456</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">BELNR</th>
+<th data-quarto-table-cell-role="th">BLART</th>
+<th data-quarto-table-cell-role="th">USNAM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">887</td>
+<td>4900000573</td>
+<td>WA</td>
+<td>BOETTCHER</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1183</td>
+<td>4900000869</td>
+<td>WA</td>
+<td>BOETTCHER</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2547</td>
+<td>5000000184</td>
+<td>WE</td>
+<td>GBIFAC-01</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">690</td>
+<td>4900000376</td>
+<td>WA</td>
+<td>BOETTCHER</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1280</td>
+<td>4900000966</td>
+<td>WA</td>
+<td>BOETTCHER</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>1500000013</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2778</td>
+<td>5000000415</td>
+<td>WE</td>
+<td>GBI-005</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2266</td>
+<td>4900001952</td>
+<td>WA</td>
+<td>BOETTCHER</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1013</td>
+<td>4900000699</td>
+<td>WA</td>
+<td>BOETTCHER</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3262</td>
+<td>1500000304</td>
+<td>KZ</td>
+<td>GBIFAC-01</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:444,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249596870,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="2cf89c01-86f8-423d-d32b-a50b85a82d73" data-tags="[]" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtener los valores únicos de la columna 'BLART' </span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>bkpf[<span class="st">'BLART'</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>array(['RV', 'DZ', 'KZ', 'KG', 'WA', 'WL', 'WE', 'RE'], dtype=object)</code></pre>
+</div>
+</div>
+<p>El tipo de documento relevante aquí es <code>KZ</code>, que representa los pagos a los proveedores.</p>
+<div class="cell" data-tags="[]" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrar solo el tipo de documento 'KZ'</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>bkpf <span class="op">=</span> bkpf[bkpf[<span class="st">'BLART'</span>]<span class="op">==</span><span class="st">'KZ'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>bkpf.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">BELNR</th>
+<th data-quarto-table-cell-role="th">BLART</th>
+<th data-quarto-table-cell-role="th">USNAM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>1500000000</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>1500000001</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>1500000002</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>1500000003</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>1500000004</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>El DataFrame final consta de información sobre los pagos a proveedores. Específicamente, el número del documento y el contador que lo registró.</p>
+</section>
+<section id="bseg" class="level2">
+<h2 class="anchored" data-anchor-id="bseg">BSEG</h2>
+<p>De esta tabla solo importan las siguientes columnas:</p>
+<ul>
+<li><code>BELNR</code> - El número del documento contable.</li>
+<li><code>BSCHL</code> - La clave de contabilización.</li>
+<li><code>WRBTR</code> - El valor monetario o valor contable.</li>
+<li><code>LIFNR</code> - La cuenta del proveedor.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reducir el DataFrame a las columnas de interés</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>bseg <span class="op">=</span> bseg.loc[:, [<span class="st">'BELNR'</span>, <span class="st">'BSCHL'</span>, <span class="st">'WRBTR'</span>, <span class="st">'LIFNR'</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:358,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249600014,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="de3d413b-37bc-408c-b741-567c9153f9a4" data-tags="[]" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtener una muestra replicable y aleatoria de 10 filas</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>bseg.sample(<span class="dv">10</span>, random_state<span class="op">=</span><span class="dv">456</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">BELNR</th>
+<th data-quarto-table-cell-role="th">BSCHL</th>
+<th data-quarto-table-cell-role="th">WRBTR</th>
+<th data-quarto-table-cell-role="th">LIFNR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">559</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1,000.00</td>
+<td>125131.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">235</td>
+<td>1.500000e+09</td>
+<td>50</td>
+<td>5</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">619</td>
+<td>1.700000e+09</td>
+<td>35</td>
+<td>1,960,000.00</td>
+<td>125088.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">32</td>
+<td>1.500000e+09</td>
+<td>50</td>
+<td>1,010,000.00</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2737</td>
+<td>1.500000e+09</td>
+<td>50</td>
+<td>1927.48</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">425</td>
+<td>1.500000e+09</td>
+<td>50</td>
+<td>1,000,000.00</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2527</td>
+<td>5.105600e+09</td>
+<td>31</td>
+<td>96,000.00</td>
+<td>125108.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2808</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1,000.00</td>
+<td>125107.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">943</td>
+<td>5.000000e+09</td>
+<td>96</td>
+<td>63,830.00</td>
+<td>125018.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">557</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1,000.00</td>
+<td>125131.0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:570,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249602410,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="0d8f8c76-75c0-4c80-9718-422c81b2fee0" data-tags="[]" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtener los valores únicos de la columna 'BSCHL' </span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>bseg[<span class="st">'BSCHL'</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>array([50, 25, 40, 35, 89, 96, 86, 99, 81, 91, 31, 83, 93, 21])</code></pre>
+</div>
+</div>
+<p>La clave de contabilización relevante aquí es <code>25</code>, que representa un registro contable de débito en la cuenta de proveedor, lo que significa que se ha realizado una compra o un gasto con el proveedor.</p>
+<div class="cell" data-tags="[]" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrar solo la clave de contabilización '25'</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>bseg <span class="op">=</span> bseg[bseg[<span class="st">'BSCHL'</span>]<span class="op">==</span><span class="dv">25</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:592,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249605604,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="87f5a3fa-3c5e-454d-ab98-f2e4304527f6" data-tags="[]" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver el tipo de dato de las columnas</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>bseg.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<pre><code>BELNR    float64
+BSCHL      int64
+WRBTR     object
+LIFNR    float64
+dtype: object</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Eliminar la separación de miles en 'WRBTR'</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>bseg[<span class="st">'WRBTR'</span>] <span class="op">=</span> bseg[<span class="st">'WRBTR'</span>].<span class="bu">str</span>.replace(<span class="st">','</span>, <span class="st">''</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:550,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249607614,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="cd6ed536-7b49-4c76-ceaa-56ed22650b97" data-tags="[]" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>bseg.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">BELNR</th>
+<th data-quarto-table-cell-role="th">BSCHL</th>
+<th data-quarto-table-cell-role="th">WRBTR</th>
+<th data-quarto-table-cell-role="th">LIFNR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>213710.00</td>
+<td>125131.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1068550.00</td>
+<td>125131.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">5</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>933153.41</td>
+<td>125135.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1050.00</td>
+<td>125135.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">9</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>30300.00</td>
+<td>125131.0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>El DataFrame final consta de información sobre los gastos con proveedores. Específicamente, el número del documento, el valor contable y la cuenta del proveedor al que se le depositó.</p>
+<p>Pero eso no es todo…</p>
+<section id="obtener-el-primer-dígito-del-valor-contable" class="level3">
+<h3 class="anchored" data-anchor-id="obtener-el-primer-dígito-del-valor-contable">Obtener el primer dígito del valor contable</h3>
+<div class="cell" data-tags="[]" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ...y crear una nueva columna con él:</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>bseg[<span class="st">'FIRST'</span>] <span class="op">=</span> bseg[<span class="st">'WRBTR'</span>].<span class="bu">str</span>[<span class="dv">0</span>:<span class="dv">1</span>].astype(<span class="bu">int</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>bseg[<span class="st">'FIRST'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>1       2
+3       1
+5       9
+7       1
+9       3
+       ..
+2802    1
+2804    1
+2806    1
+2808    1
+2810    1
+Name: FIRST, Length: 353, dtype: int64</code></pre>
+</div>
+</div>
+<p>Esto será útil más adelante.</p>
+</section>
+<section id="seleccionar-solo-los-proveedores-con-más-de-20-documentos" class="level3">
+<h3 class="anchored" data-anchor-id="seleccionar-solo-los-proveedores-con-más-de-20-documentos">Seleccionar solo los proveedores con más de 20 documentos</h3>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:272,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249609741,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="0c7b2386-82e0-40a4-fd07-218dd3fbf912" data-tags="[]" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ¿Cuántos documentos hay por proveedor?</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>vendors <span class="op">=</span> bseg.groupby(<span class="st">'LIFNR'</span>).size().sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>vendors</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>LIFNR
+125131.0    122
+125135.0    118
+125134.0     47
+125104.0     31
+125107.0     22
+125105.0      4
+125121.0      3
+125000.0      1
+125014.0      1
+125070.0      1
+125098.0      1
+125101.0      1
+125127.0      1
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:309,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249611335,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="4e84c517-e461-4f27-c5e1-e7f4f6e8379d" data-tags="[]" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrar los proveedores con más de 20 documentos</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>vendors <span class="op">=</span> vendors[vendors <span class="op">&gt;</span> <span class="dv">20</span>]</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>vendors</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<pre><code>LIFNR
+125131.0    122
+125135.0    118
+125134.0     47
+125104.0     31
+125107.0     22
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:487,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249612308,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="2c7597ba-7221-4cec-eb49-653c445fb98e" data-tags="[]" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>vendors.index</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<pre><code>Index([125131.0, 125135.0, 125134.0, 125104.0, 125107.0], dtype='float64', name='LIFNR')</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Seleccionar proveedores de interés</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>bseg <span class="op">=</span> bseg[bseg[<span class="st">'LIFNR'</span>].isin(vendors.index)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:489,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249977509,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="80583663-3386-46ec-896d-6c8b48bdc078" data-tags="[]" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>bseg.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">BELNR</th>
+<th data-quarto-table-cell-role="th">BSCHL</th>
+<th data-quarto-table-cell-role="th">WRBTR</th>
+<th data-quarto-table-cell-role="th">LIFNR</th>
+<th data-quarto-table-cell-role="th">FIRST</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>213710.00</td>
+<td>125131.0</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1068550.00</td>
+<td>125131.0</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">5</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>933153.41</td>
+<td>125135.0</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1050.00</td>
+<td>125135.0</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">9</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>30300.00</td>
+<td>125131.0</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="integrar-dataframes-y-crear-variables-para-el-análisis-benford" class="level2">
+<h2 class="anchored" data-anchor-id="integrar-dataframes-y-crear-variables-para-el-análisis-benford">Integrar DataFrames y crear variables para el análisis Benford</h2>
+<div class="cell" data-tags="[]" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Integrar ambas tablas utilizando la columna 'BELNR' (número del doc. contable) como clave primaria</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>vc <span class="op">=</span> pd.merge(bseg, bkpf, how<span class="op">=</span><span class="st">'left'</span>, on<span class="op">=</span><span class="st">'BELNR'</span>)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>vc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">BELNR</th>
+<th data-quarto-table-cell-role="th">BSCHL</th>
+<th data-quarto-table-cell-role="th">WRBTR</th>
+<th data-quarto-table-cell-role="th">LIFNR</th>
+<th data-quarto-table-cell-role="th">FIRST</th>
+<th data-quarto-table-cell-role="th">BLART</th>
+<th data-quarto-table-cell-role="th">USNAM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>213710.00</td>
+<td>125131.0</td>
+<td>2</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1068550.00</td>
+<td>125131.0</td>
+<td>1</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>933153.41</td>
+<td>125135.0</td>
+<td>9</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1050.00</td>
+<td>125135.0</td>
+<td>1</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>30300.00</td>
+<td>125131.0</td>
+<td>3</td>
+<td>KZ</td>
+<td>GBI-005</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">335</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1000.00</td>
+<td>125107.0</td>
+<td>1</td>
+<td>KZ</td>
+<td>GBIFAC-01</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">336</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1000.00</td>
+<td>125107.0</td>
+<td>1</td>
+<td>KZ</td>
+<td>GBIFAC-01</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">337</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1000.00</td>
+<td>125107.0</td>
+<td>1</td>
+<td>KZ</td>
+<td>GBIFAC-01</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">338</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1000.00</td>
+<td>125107.0</td>
+<td>1</td>
+<td>KZ</td>
+<td>GBIFAC-01</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">339</td>
+<td>1.500000e+09</td>
+<td>25</td>
+<td>1000.00</td>
+<td>125131.0</td>
+<td>1</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+
+<p>340 rows × 7 columns</p>
+</div>
+</div>
+</div>
+<section id="crear-variables---la-ley-de-benford" class="level3">
+<h3 class="anchored" data-anchor-id="crear-variables---la-ley-de-benford">Crear variables - <a href="https://es.wikipedia.org/wiki/Ley_de_Benford">La ley de Benford</a></h3>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:432,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249617326,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="6e45afac-686b-4aa6-afb8-c589866a6108" data-tags="[]" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="co">Contar el número de veces que aparece cada combinación única de valores en 'FIRST' y 'LIFNR'</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="co">en el DataFrame vc y crear un nuevo DataFrame llamado ben_vc_vendor que resuma esa información.</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>ben_vc_vendor <span class="op">=</span> vc.groupby([<span class="st">'FIRST'</span>, <span class="st">'LIFNR'</span>])[<span class="st">'FIRST'</span>].count().reset_index(name<span class="op">=</span><span class="st">'COUNT'</span>)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>ben_vc_vendor</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">FIRST</th>
+<th data-quarto-table-cell-role="th">LIFNR</th>
+<th data-quarto-table-cell-role="th">COUNT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1</td>
+<td>125104.0</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1</td>
+<td>125107.0</td>
+<td>20</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>1</td>
+<td>125131.0</td>
+<td>72</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>1</td>
+<td>125134.0</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>1</td>
+<td>125135.0</td>
+<td>74</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>2</td>
+<td>125131.0</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>2</td>
+<td>125134.0</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>2</td>
+<td>125135.0</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>3</td>
+<td>125107.0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>3</td>
+<td>125131.0</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>3</td>
+<td>125135.0</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>4</td>
+<td>125104.0</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>4</td>
+<td>125131.0</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>4</td>
+<td>125135.0</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>5</td>
+<td>125104.0</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>5</td>
+<td>125131.0</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">16</td>
+<td>5</td>
+<td>125135.0</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">17</td>
+<td>6</td>
+<td>125104.0</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>6</td>
+<td>125131.0</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>6</td>
+<td>125135.0</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">20</td>
+<td>7</td>
+<td>125104.0</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">21</td>
+<td>7</td>
+<td>125107.0</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">22</td>
+<td>7</td>
+<td>125131.0</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">23</td>
+<td>7</td>
+<td>125134.0</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">24</td>
+<td>7</td>
+<td>125135.0</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">25</td>
+<td>8</td>
+<td>125104.0</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">26</td>
+<td>8</td>
+<td>125131.0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">27</td>
+<td>8</td>
+<td>125134.0</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">28</td>
+<td>9</td>
+<td>125104.0</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">29</td>
+<td>9</td>
+<td>125131.0</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">30</td>
+<td>9</td>
+<td>125134.0</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">31</td>
+<td>9</td>
+<td>125135.0</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>De este modo se obtiene la cantidad de veces (COUNT) que el primer dígito del valor contable (FIRST) se repite para cada proveedor (LIFNR).</p>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:293,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249618383,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="50c903d6-507a-4d68-e79b-0a0b822a84bd" data-tags="[]" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="co">Contar el número de veces que aparece cada combinación única de valores en 'FIRST' y 'USNAM'</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co">en el DataFrame vc y crear un nuevo DataFrame llamado ben_vc_vendor que resuma esa información.</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>ben_vc_accountant <span class="op">=</span> vc.groupby([<span class="st">'FIRST'</span>, <span class="st">'USNAM'</span>])[<span class="st">'FIRST'</span>].count().reset_index(name<span class="op">=</span><span class="st">'COUNT'</span>)</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>ben_vc_accountant</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="25">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">FIRST</th>
+<th data-quarto-table-cell-role="th">USNAM</th>
+<th data-quarto-table-cell-role="th">COUNT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1</td>
+<td>GBI-005</td>
+<td>28</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1</td>
+<td>GBI-026</td>
+<td>83</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>1</td>
+<td>GBIFAC-01</td>
+<td>59</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>2</td>
+<td>GBI-005</td>
+<td>17</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>2</td>
+<td>GBI-026</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>2</td>
+<td>GBIFAC-01</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>3</td>
+<td>GBI-005</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>3</td>
+<td>GBI-026</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>3</td>
+<td>GBIFAC-01</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>4</td>
+<td>GBI-026</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>4</td>
+<td>GBIFAC-01</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>5</td>
+<td>GBI-005</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>5</td>
+<td>GBI-026</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>5</td>
+<td>GBIFAC-01</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>6</td>
+<td>GBI-005</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>6</td>
+<td>GBI-026</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">16</td>
+<td>6</td>
+<td>GBIFAC-01</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">17</td>
+<td>7</td>
+<td>GBI-026</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>7</td>
+<td>GBIFAC-01</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>8</td>
+<td>GBI-026</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">20</td>
+<td>8</td>
+<td>GBIFAC-01</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">21</td>
+<td>9</td>
+<td>GBI-005</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">22</td>
+<td>9</td>
+<td>GBI-026</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">23</td>
+<td>9</td>
+<td>GBIFAC-01</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>De este modo se obtiene la cantidad de veces (COUNT) que el primer dígito del valor contable (FIRST) se repite para cada contador (USNAM).</p>
+</section>
+</section>
+<section id="análisis-de-benford" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-benford">Análisis de Benford</h2>
+<div class="cell" data-tags="[]" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear una lista con los valores de la ley de Benford para los primeros 9 dígitos</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>benford <span class="op">=</span> [math.log10(<span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span> <span class="op">/</span> d)<span class="op">*</span><span class="dv">100</span> <span class="cf">for</span> d <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">10</span>)]</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="co">La ley de Benford establece que, en muchos conjuntos de datos del mundo real,</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="co">los dígitos iniciales de los números siguen una distribución no uniforme, donde el dígito "1"</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="co">es el más común, seguido del "2", "3" y así sucesivamente, hasta que el dígito "9" es el menos común. </span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a><span class="co">La fórmula para calcular la ley de Benford es log10(1 + 1/d), donde 'd' es el dígito que se está analizando.</span></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear un diccionario con dos claves: 'n' y 'b'.</span></span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 'n' es una lista de números enteros del 1 al 9 y 'b' es la lista benford creada anteriormente</span></span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> {<span class="st">'n'</span>: <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">10</span>), <span class="st">'b'</span>: benford}</span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Utilizar el diccionario para crear un nuevo DataFrame con dos columnas:</span></span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a><span class="co"># La columna 'n', que contiene los números enteros del 1 al 9 y</span></span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'b', que contiene los valores de la ley de Benford correspondientes a cada dígito</span></span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>ben_predict <span class="op">=</span> pd.DataFrame(d)</span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>ben_predict</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="26">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">n</th>
+<th data-quarto-table-cell-role="th">b</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1</td>
+<td>30.103000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2</td>
+<td>17.609126</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>3</td>
+<td>12.493874</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>4</td>
+<td>9.691001</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>5</td>
+<td>7.918125</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>6</td>
+<td>6.694679</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>7</td>
+<td>5.799195</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>8</td>
+<td>5.115252</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>9</td>
+<td>4.575749</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Graficar</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>sns.pointplot(</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'n'</span>,</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'b'</span>,</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> ben_predict,</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>    color <span class="op">=</span> <span class="st">'black'</span></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="CF-Benford-analysis_files/figure-html/cell-28-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Este gráfico representa la <strong>distribución de Benford</strong> y muestra cómo cambia la probabilidad de que un número comience con un dígito específico en función del número en sí mismo.</p>
+<section id="graficar-el-valor-contable-por-proveedor" class="level3">
+<h3 class="anchored" data-anchor-id="graficar-el-valor-contable-por-proveedor">Graficar el valor contable por proveedor</h3>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:666,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249676890,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="48a9aa88-d9bb-418f-bb5f-d21e111b081b" data-tags="[]" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>sns.pointplot(</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'FIRST'</span>,</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'COUNT'</span>,</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>    hue <span class="op">=</span> <span class="st">'LIFNR'</span>,</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> ben_vc_vendor</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>sns.pointplot(</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'n'</span>,</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'b'</span>,</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> ben_predict,</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>    color <span class="op">=</span> <span class="st">'black'</span></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="CF-Benford-analysis_files/figure-html/cell-29-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Este gráfico representa la cantidad de veces (eje y) que se repite un determinado primer dígito (eje x) en el valor contable depositado a los proveedores. Por ejemplo, tenemos que la cuenta de proveedor <code>125135.0</code> (violeta) registra arriba de 70 veces que un valor contable comienza con el dígito 1 y abajo de 20 veces que comienza con el dígito 2.</p>
+<p>Este gráfico tambien tiene superpuesta la distribución de Benford (negro), a la que casi todas las cuentas de proveedores responden adecuadamente.</p>
+<blockquote class="blockquote">
+<p>⚠️ <strong>Anomalía en los valores contables</strong> La cuenta de proveedor <code>125134.0</code> (rojo) se comporta de manera extraña, mostrando mayor cantidad de valores iniciados con dígitos como 9, 8 y 7 que con dígitos como 1 y 2.</p>
+</blockquote>
+</section>
+<section id="graficar-el-valor-contable-por-contador" class="level3">
+<h3 class="anchored" data-anchor-id="graficar-el-valor-contable-por-contador">Graficar el valor contable por contador</h3>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:617,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249680197,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="cbcd993b-6a9a-48b8-d2a8-6c751dfd9302" data-tags="[]" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>sns.pointplot(</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'FIRST'</span>,</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'COUNT'</span>,</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>    hue <span class="op">=</span> <span class="st">'USNAM'</span>,</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> ben_vc_accountant</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>sns.pointplot(</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'n'</span>,</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'b'</span>,</span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> ben_predict,</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>    color <span class="op">=</span> <span class="st">'black'</span></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="CF-Benford-analysis_files/figure-html/cell-30-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Este gráfico representa la cantidad de veces (eje y) que se repite un determinado primer dígito (eje x) en el valor contable registrado por los contadores. Por ejemplo, tenemos que el contador <code>GBI-026</code> (naranja) registra más de 80 veces que un valor contable comienza con el dígito 1.</p>
+<blockquote class="blockquote">
+<p>⚠️ <strong>Anomalía en los valores contables:</strong> El contador <code>GBIFAC-01</code> (verde) se comporta de manera extraña, mostrando una cantidad irregular de valores iniciados con dígitos como 9, 8 y 7.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>⚠️ <strong>Anomalía en los valores contables:</strong> El contador <code>GBIFAC-01</code> (verde) y La cuenta de proveedor 125134.0 (rojo) parecen sugerir una posible manipulación o alteración de datos.</p>
+</blockquote>
+</section>
+</section>
+<section id="quién-es-gbifac-01-y-qué-pasó" class="level2">
+<h2 class="anchored" data-anchor-id="quién-es-gbifac-01-y-qué-pasó">¿Quién es GBIFAC-01 y qué pasó?</h2>
+<div class="cell" data-tags="[]" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar el número de filas en el DataFrame vc donde la columna 'USNAM' sea igual a 'GBIFAC-01',</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>re1 <span class="op">=</span> <span class="bu">len</span>(vc[(vc[<span class="st">'USNAM'</span>]<span class="op">==</span><span class="st">'GBIFAC-01'</span>)])</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'El número de documentos que el contador GBIFAC-01 registró en total es de: </span><span class="sc">{</span>re1<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>El número de documentos que el contador GBIFAC-01 registró en total es de: 130</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>vc_total <span class="op">=</span> vc[vc[<span class="st">'USNAM'</span>] <span class="op">==</span> <span class="st">'GBIFAC-01'</span>][<span class="st">'WRBTR'</span>].astype(<span class="bu">float</span>).<span class="bu">sum</span>()</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"El valor contable total registrado por GBIFAC-01 es de: </span><span class="sc">{</span>vc_total<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>El valor contable total registrado por GBIFAC-01 es de: 32713437.64</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:631,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249690104,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="e37b5316-3b04-41f3-eeae-7631d637fa2d" data-tags="[]" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar el número de filas en el DataFrame vc que cumpla las siguientes condiciones:</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'USNAM' debe ser igual a 'GBIFAC-01',</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'FIRST' debe ser uno de los valores [7, 8, 9]</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'LIFNR' no debe ser igual a 125134</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>re2 <span class="op">=</span> <span class="bu">len</span>(vc[(vc[<span class="st">'USNAM'</span>]<span class="op">==</span><span class="st">'GBIFAC-01'</span>) <span class="op">&amp;</span> (vc[<span class="st">'FIRST'</span>].isin([<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])) <span class="op">&amp;</span> (vc[<span class="st">'LIFNR'</span>] <span class="op">!=</span> <span class="dv">125134</span>)])</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'El número de documentos que el contador GBIFAC-01 registró </span><span class="ch">\n</span><span class="ss"> * con valores contables atípicos </span><span class="ch">\n</span><span class="ss"> * para proveedores que no responden a la cuenta 125134.0 </span><span class="ch">\n</span><span class="ss"> es de: </span><span class="sc">{</span>re2<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>El número de documentos que el contador GBIFAC-01 registró 
+ * con valores contables atípicos 
+ * para proveedores que no responden a la cuenta 125134.0 
+ es de: 5</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar el número de filas en el DataFrame vc que cumpla las siguientes condiciones:</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'USNAM' debe ser igual a 'GBIFAC-01',</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'FIRST' no debe ser uno de los valores [7, 8, 9]</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'LIFNR' no debe ser igual a 125134</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>re3 <span class="op">=</span> <span class="bu">len</span>(vc[(vc[<span class="st">'USNAM'</span>]<span class="op">==</span><span class="st">'GBIFAC-01'</span>) <span class="op">&amp;</span> <span class="op">~</span>(vc[<span class="st">'FIRST'</span>].isin([<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])) <span class="op">&amp;</span> <span class="op">~</span>(vc[<span class="st">'LIFNR'</span>] <span class="op">==</span> <span class="dv">125134</span>)])</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'El número de documentos que el contador GBIFAC-01 registró </span><span class="ch">\n</span><span class="ss"> * con valores contables normales </span><span class="ch">\n</span><span class="ss"> * para cuentas de proveedor que no respondan a 125134.0 </span><span class="ch">\n</span><span class="ss"> es de: </span><span class="sc">{</span>re3<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>El número de documentos que el contador GBIFAC-01 registró 
+ * con valores contables normales 
+ * para cuentas de proveedor que no respondan a 125134.0 
+ es de: 79</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:322,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249709799,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="2187a4be-08c6-4f16-8325-0c391452cb12" data-tags="[]" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar el número de filas en el DataFrame vc que cumpla las siguientes condiciones:</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'USNAM' debe ser igual a 'GBIFAC-01',</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'FIRST' debe ser uno de los valores [7, 8, 9]</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'LIFNR' debe ser igual a 125134</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>re4 <span class="op">=</span> <span class="bu">len</span>(vc[(vc[<span class="st">'USNAM'</span>]<span class="op">==</span><span class="st">'GBIFAC-01'</span>) <span class="op">&amp;</span> (vc[<span class="st">'FIRST'</span>].isin([<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])) <span class="op">&amp;</span> (vc[<span class="st">'LIFNR'</span>] <span class="op">==</span> <span class="dv">125134</span>)])</span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'El número de documentos que el contador GBIFAC-01 registró </span><span class="ch">\n</span><span class="ss"> * con valores contables atípicos </span><span class="ch">\n</span><span class="ss"> * para la cuenta de proveedor 125134.0 </span><span class="ch">\n</span><span class="ss"> es de: </span><span class="sc">{</span>re4<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>El número de documentos que el contador GBIFAC-01 registró 
+ * con valores contables atípicos 
+ * para la cuenta de proveedor 125134.0 
+ es de: 42</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:334,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249710634,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="d34f323f-12b2-4497-8465-b21018946106" data-tags="[]" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar el número de filas en el DataFrame vc que cumpla las siguientes condiciones:</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'USNAM' debe ser igual a 'GBIFAC-01',</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'FIRST' no debe ser uno de los valores [7, 8, 9]</span></span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'LIFNR' debe ser igual a 125134</span></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>re5 <span class="op">=</span> <span class="bu">len</span>(vc[(vc[<span class="st">'USNAM'</span>]<span class="op">==</span><span class="st">'GBIFAC-01'</span>) <span class="op">&amp;</span> <span class="op">~</span>(vc[<span class="st">'FIRST'</span>].isin([<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])) <span class="op">&amp;</span> (vc[<span class="st">'LIFNR'</span>] <span class="op">==</span> <span class="dv">125134</span>)])</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'El número de documentos que el contador GBIFAC-01 registró </span><span class="ch">\n</span><span class="ss"> * con valores contables normales </span><span class="ch">\n</span><span class="ss"> * para la cuenta de proveedor 125134.0 </span><span class="ch">\n</span><span class="ss"> es de: </span><span class="sc">{</span>re5<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>El número de documentos que el contador GBIFAC-01 registró 
+ * con valores contables normales 
+ * para la cuenta de proveedor 125134.0 
+ es de: 4</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:289,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249732411,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="56d3f29a-b295-45fd-8dad-99bf759f3749" data-tags="[]" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sumar los valores de la columna 'WRBTR' del DataFrame vc que cumplan con las siguientes condiciones:</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'USNAM' debe ser igual a 'GBIFAC-01',</span></span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'FIRST' debe ser uno de los valores [7, 8, 9]</span></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'LIFNR' debe ser igual a 125134</span></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>re6 <span class="op">=</span> vc[(vc[<span class="st">'USNAM'</span>]<span class="op">==</span><span class="st">'GBIFAC-01'</span>) <span class="op">&amp;</span> (vc[<span class="st">'FIRST'</span>].isin([<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])) <span class="op">&amp;</span> (vc[<span class="st">'LIFNR'</span>] <span class="op">==</span> <span class="dv">125134</span>)][<span class="st">'WRBTR'</span>].astype(<span class="bu">float</span>).<span class="bu">sum</span>()</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'La cantidad total de dinero que el contador GBIFAC-01 registró </span><span class="ch">\n</span><span class="ss"> * con valores contables atípicos </span><span class="ch">\n</span><span class="ss"> * para la cuenta de proveedor 125134.0 </span><span class="ch">\n</span><span class="ss"> es de: </span><span class="sc">{</span>re6<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>La cantidad total de dinero que el contador GBIFAC-01 registró 
+ * con valores contables atípicos 
+ * para la cuenta de proveedor 125134.0 
+ es de: 3697715.58</code></pre>
+</div>
+</div>
+<div class="cell" data-executioninfo="{&quot;elapsed&quot;:286,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1524249745966,&quot;user&quot;:{&quot;displayName&quot;:&quot;Michael Schermann&quot;,&quot;photoUrl&quot;:&quot;//lh3.googleusercontent.com/-sXyTj9V4mk8/AAAAAAAAAAI/AAAAAAAAAD4/JcGCCFE3xt8/s50-c-k-no/photo.jpg&quot;,&quot;userId&quot;:&quot;115913240975069260630&quot;},&quot;user_tz&quot;:420}" data-outputid="069ec5e0-a057-4730-895f-c26ac06027da" data-tags="[]" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sumar los valores de la columna 'WRBTR' del DataFrame vc que cumplan con las siguientes condiciones:</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'USNAM' debe ser igual a 'GBIFAC-01',</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'FIRST' no debe ser uno de los valores [7, 8, 9]</span></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="co"># la columna 'LIFNR' debe ser igual a 125134</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>re7 <span class="op">=</span> vc[(vc[<span class="st">'USNAM'</span>]<span class="op">==</span><span class="st">'GBIFAC-01'</span>) <span class="op">&amp;</span> <span class="op">~</span>(vc[<span class="st">'FIRST'</span>].isin([<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])) <span class="op">&amp;</span> (vc[<span class="st">'LIFNR'</span>] <span class="op">==</span> <span class="dv">125134</span>)][<span class="st">'WRBTR'</span>].astype(<span class="bu">float</span>).<span class="bu">sum</span>()</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'La cantidad total de dinero que el contador GBIFAC-01 registró </span><span class="ch">\n</span><span class="ss"> * con valores contables normales </span><span class="ch">\n</span><span class="ss"> * para la cuenta de proveedor 125134.0 </span><span class="ch">\n</span><span class="ss"> es de: </span><span class="sc">{</span>re7<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>La cantidad total de dinero que el contador GBIFAC-01 registró 
+ * con valores contables normales 
+ * para la cuenta de proveedor 125134.0 
+ es de: 59659.58</code></pre>
+</div>
+</div>
+<section id="graficar" class="level3">
+<h3 class="anchored" data-anchor-id="graficar">Graficar</h3>
+<div class="cell" data-tags="[]" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular el porcentaje como fracción</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>porcentaje_fraccion <span class="op">=</span> re6 <span class="op">/</span> vc_total</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear una lista con los valores</span></span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>valores <span class="op">=</span> [porcentaje_fraccion, <span class="dv">1</span> <span class="op">-</span> porcentaje_fraccion]</span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear una lista con los nombres de las secciones</span></span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>nombres <span class="op">=</span> [<span class="st">'vc total con anomalías en la cuenta 125134.0'</span>, <span class="st">'vc total de GBIFAC-01'</span>]</span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Definir los colores</span></span>
+<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a>colores <span class="op">=</span> [<span class="st">'#C3797E'</span>, <span class="st">'#AFD9A8'</span>]</span>
+<span id="cb55-12"><a href="#cb55-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-13"><a href="#cb55-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear una figura y un eje</span></span>
+<span id="cb55-14"><a href="#cb55-14" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb55-15"><a href="#cb55-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-16"><a href="#cb55-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Graficar la torta</span></span>
+<span id="cb55-17"><a href="#cb55-17" aria-hidden="true" tabindex="-1"></a>ax.pie(valores, labels<span class="op">=</span>nombres, autopct<span class="op">=</span><span class="st">'</span><span class="sc">%1.1f%%</span><span class="st">'</span>, startangle<span class="op">=</span><span class="dv">90</span>, colors<span class="op">=</span>colores)</span>
+<span id="cb55-18"><a href="#cb55-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-19"><a href="#cb55-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Agregar título a la gráfica</span></span>
+<span id="cb55-20"><a href="#cb55-20" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Porcentaje de anomalías en los valores contables frente al valor contable total'</span>)</span>
+<span id="cb55-21"><a href="#cb55-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-22"><a href="#cb55-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar la gráfica</span></span>
+<span id="cb55-23"><a href="#cb55-23" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="CF-Benford-analysis_files/figure-html/cell-39-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusiones" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones">Conclusiones:</h2>
+<ul>
+<li>El contador <code>GBIFAC-01</code> ha registrado 130 documentos, de los cuales 42 presentan valores atípicos en la cuenta de proveedor <code>125134.0</code>, con un valor contable atípico total de <code>3697715.58</code>, lo cual representa el 11.3 % del valor total registrado por este contador.</li>
+<li>Es importante tener en cuenta que una desviación de la ley de Benford no necesariamente indica fraude o irregularidades contables, sino que podría ser el resultado de diversas causas, como errores de entrada de datos, sesgos en la selección de datos o características particulares del conjunto de datos en cuestión. Por lo tanto, es necesario realizar un análisis más detallado antes de sacar conclusiones definitivas sobre la validez de los valores contables. Pero por el bien de la trama…</li>
+<li><strong>Hay que hablar con GBIFAC-01!</strong> 😰 😡</li>
+</ul>
+<hr>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
